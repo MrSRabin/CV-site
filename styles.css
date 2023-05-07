@@ -170,3 +170,24 @@ body {
     font-size: 12px;
     text-align: center;
 }
+.tooltip {
+    visibility: hidden;
+    font-size: 14px;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 15px 5px;
+    border-radius: 10px;
+
+    position: absolute;
+
+    left: 20px;
+    top: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+p:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
