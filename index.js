@@ -3,10 +3,8 @@ function dropdown(a) {
     a.parentNode.getElementsByClassName('dropdown-content')[0].classList.toggle("show");
     var arrow = a.querySelector('.arrow');
     if (arrow.innerHTML === "▲") {
-        console.log(arrow.innerHTML);
         arrow.innerHTML = "▼";
     } else {
-        console.log(arrow.innerHTML);
         arrow.innerHTML = "▲";
     }
 }

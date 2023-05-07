@@ -179,7 +179,6 @@ body {
     text-align: center;
     padding: 15px 5px;
     border-radius: 10px;
-
     position: absolute;
 
     left: 20px;
@@ -187,7 +186,7 @@ body {
     opacity: 0;
     transition: opacity 0.3s;
 }
-p:hover .tooltip{
+.text1:hover .tooltip, .text2:hover .tooltip, .text3:hover .tooltip, .text4:hover .tooltip{
     visibility: visible;
     opacity: 1;
 }
