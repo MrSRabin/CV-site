@@ -1,0 +1,21 @@
+Visual
+•	Video editing
+        Premiere - yellow 
+         After effects - red
+•	Photo editing
+•	Lightroom - green
+    photoshop - red
+Audio
+•	Audacity - red
+Physical Hardware
+•	Building computers - green 
+•	Diagnosing hardware faults - yellow
+Computer maintenance
+•	Keeping software and drivers up to date - green
+•	Troubleshooting faults - green 
+•	Registry editing / group policy editing - yellow
+tech support 
+    General computer tech support - green
+    Specific software support - yellow (depends on familiarity)
+    providing detailed instructions to end users depending on their knwoledge level
+ 
