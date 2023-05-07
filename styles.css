@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,300&display=swap');
+* {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+}
+body {
+    background-color: rgb(9, 26, 50);
+    color: white;
+}
+.intro {
+    max-width: 600px;
+    text-align: center;
+    margin-left: 30px;
+    display: inline-block;
+}
+.orange, .yellow, .green {
+    border-radius: 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.15s;
+}
+.orange {
+    background-color: orange;
+}
+.yellow {
+    background-color: yellow;
+    color: grey;
+}
+.green {
+    background-color: green;
+}
+.orange:hover, .yellow:hover, .green:hover {
+    opacity: 0.8;
+    background-color: rgb(29, 52, 102);
+    color: white;
+}
+.orange span {
+    font-weight: 700;
+}
+.yellow span {
+    font-weight: 800;
+}
+.green span {
+    font-weight: 900;
+}
+.intro button {
+    border: none;
+    border-radius: 3px;
+    padding: 6px 10px;
+    margin: 3px;
+}
+.orange-button {
+    background-color: orange;
+    color: white;
+    font-weight: 600;
+}
+.yellow-button {
+    background-color: yellow;
+    color: grey;
+    font-weight: 600;
+}
+.green-button {
+    background-color: green;
+    color: white;
+    font-weight: 600;
+}
+.skills {
+    display: flex;
+    
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr 1fr; */
+}
+.dropdown {
+    position: relative;
+    flex: 1 0 21%;
+    padding: 10px;
+}
+.dropdownbt {
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 100px;
+    transition: 0.15s;
+    overflow: none;
+
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.dropdownbt:hover, .dropdownbt:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.dropdown-content {
+    display: none;
+    position: relative;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    min-width: 200px;
+}
+.show {display:block;}
+.dropdown-content p {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, .25);
+    margin-bottom: 8px;
+    cursor: context-menu;
+}
+.dropdown-content p:hover {
+    box-shadow: none;
+}
+.orange-bgc {
+    background-color: orange;
+    color: white;
+}
+.yellow-bgc {
+    background-color: yellow;
+    color: grey;
+}
+.green-bgc {
+    background-color: green;
+    color: white;
+}
+#visual-editing {
+    background-color: rgb(18, 44, 100);
+    border: 2px solid transparent;
+}
+#audio-editing {
+    background-color: rgb(33, 90, 151);
+    border: 2px solid transparent;
+}
+#computer-hardware {
+    background-color: rgb(43, 90, 189);
+    border: 2px solid transparent;
+}
+#computer-maintenance {
+    background-color: rgb(62, 120, 244);
+    border: 2px solid transparent;
+}
+#tech-support {
+    background-color: rgb(12, 161, 202);
+    border: 2px solid transparent;
+}
+#software-devlopment {
+    background-color: rgb(14, 197, 247);
+    border: 2px solid transparent;
+}
+#education {
+    background-color: rgb(14, 247, 228);
+    border: 2px solid transparent;
+
+}
+#visual-editing:hover, #audio-editing:hover,  #computer-hardware:hover, #computer-maintenance:hover, #tech-support:hover, #software-devlopment:hover {
+    border: 2px solid grey;
+}
+#visual-editing:focus, #audio-editing:focus, #computer-hardware:focus, #computer-maintenance:focus, #tech-support:focus, #software-devlopment:focus {
+    border: 2px solid rgb(14, 188, 227);
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Shaul Rabin CV</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <div class="intro">
+                <h1 style="margin-bottom: 10px;">
+                    My name is shaul rabin and I have a wide ranging experience
+                    with computers and IT...
+                </h1>
+                <h3>
+                    However I have a broad spectrum of skill level in these areas,
+                    so I have created a color based system
+                    to indicate my skills in these areas.
+                </h3>
+                <div class="lights">
+                    <div class="orange">
+                        <button class="orange-button">orange</button>
+                        <p>Indicates a <span>basic</span> knowledge </p>
+                    </div>
+                    <div class="yellow">
+                        <button class="yellow-button">Yellow</button>
+                        <p>Indicate a more <span>familiar </span> knowledge</p>
+                    </div>
+                    <div class="green">
+                        <button class="green-button">Green</button>
+                        <p>Indicates a <span>comfortable</span> and <span>ranging</span> knowledge</p>
+                    </div>
+                </div>
+                <h4 style="margin-top: 10px;">
+                    When focused on any one specific skill I can pick it up extremely quickly
+                    and will in a short span of time familirise myself with its details, 
+                    intricacies and features (where applicable)
+                </h4>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="dropdown"  > 
+                <button  onclick="dropdown(this)" class="dropdownbt" id="visual-editing">VISUAL EDITING<span class="arrow">&#x25BC;</span></button>
+                <!-- &#x25B2; up arrow -->
+                <div class="dropdown-content" id="visual-editing">
+                    <p class="text1 yellow-bgc">Adobe Premiere &#169</p>
+                    <p class="text2 orange-bgc">Adobe After effects &#169</p>
+                    <p class="text3 green-bgc">Adobe Lightroom &#169</p>
+                    <p class="text4 orange-bgc">Adobe photoshop &#169</p>
+                </div>
+            </div>
+            <div class="dropdown" > 
+                <button id="audio-editing" onclick="dropdown(this)" class="dropdownbt">AUDIO EDITING<span class="arrow">&#x25BC;</span></button>
+                <!-- &#x25B2; up arrow -->
+                <div class="dropdown-content" id="audio-editing">
+                    <p class="text1 orange-bgc">Audacity</p>
+                </div>
+            </div>
+            <div class="dropdown"  > 
+                <button  onclick="dropdown(this)" class="dropdownbt" id="computer-hardware">COMPUTER HARDWARE<span class="arrow">&#x25BC;</span></button>
+                <!-- &#x25B2; up arrow -->
+                <div class="dropdown-content" id="computer-hardware">
+                    <p class="text1 green-bgc">Building Custom computers</p>
+                    <p class="text2 yellow-bgc">Diagnosing hardware faults</p>
+                </div>
+            </div>
+            <div class="dropdown"  > 
+                <button  onclick="dropdown(this)" class="dropdownbt" id="computer-maintenance">COMPUTER MAINTENANCE<span class="arrow">&#x25BC;</span></button>
+                <!-- &#x25B2; up arrow -->
+                <div class="dropdown-content" id="computer-maintenance">
+                    <p class="text1 green-bgc">Troubleshooting system faults, errors, bugs</p>
+                    <p class="text2 green-bgc">Keeping software and drivers up to date</p>
+                    <p class="text3 yellow-bgc">Registry and group policy editing</p>
+                </div>
+            </div>
+            <div class="dropdown"  > 
+                <button  onclick="dropdown(this)" class="dropdownbt" id="tech-support">TECH SUPPORT<span class="arrow">&#x25BC;</span></button>
+                <!-- &#x25B2; up arrow -->
+                <div class="dropdown-content" id="tech-support">
+                    <p class="text1 green-bgc">general windows tech support</p>
+                    <p class="text2 yellow-bgc">Specific software support</p>
+                    <p class="text3 green-bgc">providing detailed instructions to end users depending on their knowledge level</p>
+                </div>
+            </div>
+            <div class="dropdown"  > 
+                <button  onclick="dropdown(this)" class="dropdownbt" id="software-devlopment">SOFTWARE DEVELOPMENT<span class="arrow">&#x25BC;</span></button>
+                <!-- &#x25B2; up arrow -->
+                <div class="dropdown-content" id="tech-support">
+                    <p class="text1 orange-bgc">HTML, CSS, JS</p>
+                    <p class="text2 orange-bgc">Python</p>
+                </div>
+            </div>
+            <div class="dropdown"  > 
+                <button  onclick="dropdown(this)" class="dropdownbt" id="education">EDUCATION<span class="arrow">&#x25BC;</span></button>
+                <!-- &#x25B2; up arrow -->
+                <div class="dropdown-content" id="education">
+                    <p class="text1 green-bgc">IT BTEC</p>
+                    <p class="text2 green-bgc">Codecademy javascript</p>
+                    <p class="text3 green-bgc">~80% complete Harvard's CS50</p>
+                    <p class="text4 orange-bgc">Recently started CS50’s Introduction to Programming with Python</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Every line of code for this site was written by Shaul Rabin
+        </div>
+        
+        
+        <script src="index.js"></script>
+    </body>
+</html>
