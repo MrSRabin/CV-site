@@ -7,12 +7,14 @@ body {
     background-color: rgb(9, 26, 50);
     color: white;
 }
+
 .intro {
     max-width: 600px;
     text-align: center;
     margin-left: 30px;
     display: inline-block;
 }
+
 .orange, .yellow, .green {
     border-radius: 30px;
     margin-top: 10px;
@@ -79,6 +81,7 @@ body {
     padding: 10px;
 }
 .dropdownbt {
+    align-items: center;
     width: 100%;
     color: white;
     font-size: 20px;
@@ -86,7 +89,6 @@ body {
     border-radius: 20px;
     padding: 10px 100px;
     transition: 0.15s;
-    overflow: none;
 
     margin-right: 10px;
     margin-top: 20px;
@@ -189,4 +191,42 @@ body {
 .text1:hover .tooltip, .text2:hover .tooltip, .text3:hover .tooltip, .text4:hover .tooltip{
     visibility: visible;
     opacity: 1;
+}
+.question {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10) inset;
+    
+}
+.question p {
+    margin-left: 3px;
+}
+.answer-input {
+    margin-top: 10px;
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    outline: none;
+}
+.answer-input::placeholder {
+    color: white;
+}
+.submit-button {
+    background-color: rgb(5, 152, 98);
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+#q1result {
+    position: relative;
+    visibility: hidden;
+
 }
