@@ -1,12 +1,3 @@
-function dropdown(a) {
-    a.parentNode.getElementsByClassName('dropdown-content')[0].classList.toggle("show");
-    var arrow = a.querySelector('.arrow');
-    if (arrow.innerHTML === "▲") {
-        arrow.innerHTML = "▼";
-    } else {
-        arrow.innerHTML = "▲";
-    }
-}
 
 document.querySelector("#submit1").addEventListener("click", function(){
     let correctAnswer = "shaul rabin"
@@ -22,3 +13,13 @@ document.querySelector("#submit1").addEventListener("click", function(){
         document.querySelector("#q1result").style.visibility = "visible";
     }
 });
+
+function dropdown(a) {
+    a.parentNode.getElementsByClassName('dropdown-content')[0].classList.toggle("show");
+    var arrow = a.querySelector('.arrow');
+    if (arrow.innerHTML === "▲") {
+        arrow.innerHTML = "▼";
+    } else {
+        arrow.innerHTML = "▲";
+    }
+}
