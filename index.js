@@ -1,16 +1,19 @@
 
 document.querySelector("#submit1").addEventListener("click", function(){
     let correctAnswer = "shaul rabin"
+    let altAnswer = "mordechai shaul rabin";
     let answer = document.querySelector("#q1").value.toLowerCase();
     if (answer == correctAnswer){
         document.querySelector("#q1").style.backgroundColor = "Green";
-        document.querySelector("#q1result").innerHTML = "Correct";
-        document.querySelector("#q1result").style.visibility = "visible";
+        swal("Correct!", "", "success")
+    }
+    else if (answer == altAnswer){
+        document.querySelector("#q1").style.backgroundColor = "Green";
+        swal("Correct, Hey Mottel!", "", "success")
     }
     else {
         document.querySelector("#q1").style.backgroundColor = "Red";
-        document.querySelector("#q1result").innerHTML = "Incorrect";
-        document.querySelector("#q1result").style.visibility = "visible";
+        swal("Sorry Wrong Answer", "", "error")
     }
 });
 
