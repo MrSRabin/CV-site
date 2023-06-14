@@ -56,15 +56,21 @@ img {
     height: 100px;
     border-radius: 5px;
     padding: .35rem;
+    padding-top: 0;
     scroll-snap-align: start;
     border: 2px solid var(--accent);
     overflow: auto;
 }
 
 .slider-inner > h4 {
+    padding-top: .35rem;
     color: white;
     font-weight: bold;
     font-size: 19px;
+    position: sticky;
+    top: 0;
+    background-color: var(--accent);
+    margin-top: 0;
 }
 .slider-inner:hover {
     border: 2px solid var(--text);
