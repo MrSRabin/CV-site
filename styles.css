@@ -8,9 +8,9 @@
 
 :root {
     --text: #0e1a20;
-    --background: #aec1ca;
+    --background: #c6e6f6;
     --primary-button: #af6b4b;
-    --secondary-button: #cde1ea;
+    --secondary-button: #72c7ee;
     --accent: #af6b4b;
     --accent-dark: #7e4b34;
 
@@ -59,7 +59,9 @@ img {
 }
 
 .slider-inner > h4 {
-    color: var(--secondary-button);
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
 }
 .slider-inner:hover {
     border: 2px solid var(--accent-dark);
