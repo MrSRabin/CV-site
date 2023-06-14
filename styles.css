@@ -1,241 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,300&display=swap');
+
 * {
     font-family: Roboto, sans-serif;
     box-sizing: border-box;
     margin: 0;
 }
+
 :root {
     --text: #0e1a20;
-    --background: #dfebf1;
+    --background: #aec1ca;
     --primary-button: #af6b4b;
     --secondary-button: #cde1ea;
     --accent: #af6b4b;
+    --accent-dark: #7e4b34;
+
 }
+
+/* MISC */
 
 body {
     background-color: var(--background);
     color: var(--text);
 }
 
-.intro {
-    max-width: 600px;
-    text-align: center;
-    margin-left: 30px;
-    display: inline-block;
+img {
+    max-width: 100%;
+    display: block;
 }
 
-.orange, .yellow, .green {
-    border-radius: 30px;
+.wrapper {
+    width: min(100% - 3rem, 100ch);
+    margin-inline: auto;
     margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: all 0.15s;
 }
-.orange {
-    background-color: orange;
-}
-.yellow {
-    background-color: yellow;
-    color: grey;
-}
-.green {
-    background-color: green;
-}
-.orange:hover, .yellow:hover, .green:hover {
-    opacity: 0.8;
-    background-color: rgb(29, 52, 102);
-    color: white;
-}
-.orange span {
-    font-weight: 700;
-}
-.yellow span {
-    font-weight: 800;
-}
-.green span {
-    font-weight: 900;
-}
-.intro button {
-    border: none;
-    border-radius: 3px;
-    padding: 6px 10px;
-    margin: 3px;
-}
-.orange-button {
-    background-color: orange;
-    color: white;
-    font-weight: 600;
-}
-.yellow-button {
-    background-color: yellow;
-    color: grey;
-    font-weight: 600;
-}
-.green-button {
-    background-color: green;
-    color: white;
-    font-weight: 600;
-}
-.skills {
-    display: flex;
 
-    flex-wrap: wrap;
-    /* grid-template-columns: 1fr 1fr; */
-}
-.dropdown {
-    position: relative;
-    flex: 1 0 21%;
-    padding: 10px;
-}
-.dropdownbt {
-    align-items: center;
-    width: 100%;
-    color: white;
-    font-size: 20px;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 100px;
-    transition: 0.15s;
+/* skills.html */
 
-    margin-right: 10px;
-    margin-top: 20px;
-}
-.dropdownbt:hover, .dropdownbt:focus {
-    cursor: pointer;
-    opacity: 0.8;
-}
-.dropdown-content {
-    display: none;
-    position: relative;
-    border-radius: 20px;
-    padding: 20px;
-    text-align: center;
-    min-width: 200px;
-}
-.show {display:block;}
-.dropdown-content p {
-    padding: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, .25);
-    margin-bottom: 8px;
-    cursor: context-menu;
-}
-.dropdown-content p:hover {
-    box-shadow: none;
-}
-.orange-bgc {
-    background-color: orange;
-    color: white;
-}
-.yellow-bgc {
-    background-color: yellow;
-    color: grey;
-}
-.green-bgc {
-    background-color: green;
-    color: white;
-}
-#visual-editing {
-    background-color: rgb(18, 44, 100);
-    border: 2px solid transparent;
-}
-#audio-editing {
-    background-color: rgb(33, 90, 151);
-    border: 2px solid transparent;
-}
-#computer-hardware {
-    background-color: rgb(43, 90, 189);
-    border: 2px solid transparent;
-}
-#computer-maintenance {
-    background-color: rgb(62, 120, 244);
-    border: 2px solid transparent;
-}
-#tech-support {
-    background-color: rgb(12, 161, 202);
-    border: 2px solid transparent;
-}
-#software-devlopment {
-    background-color: rgb(14, 197, 247);
-    border: 2px solid transparent;
-}
-#education {
-    background-color: rgb(14, 247, 228);
-    border: 2px solid transparent;
-
-}
-#visual-editing:hover, #audio-editing:hover,  #computer-hardware:hover, #computer-maintenance:hover, #tech-support:hover, #software-devlopment:hover {
-    border: 2px solid grey;
-}
-#visual-editing:focus, #audio-editing:focus, #computer-hardware:focus, #computer-maintenance:focus, #tech-support:focus, #software-devlopment:focus {
-    border: 2px solid rgb(14, 188, 227);
-}
-.footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    font-size: 12px;
-    text-align: center;
-}
-.tooltip {
-    visibility: hidden;
-    font-size: 14px;
-    width: 300px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    padding: 15px 5px;
-    border-radius: 10px;
-    position: absolute;
-
-    left: 20px;
-    top: 20px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.text1:hover .tooltip, .text2:hover .tooltip, .text3:hover .tooltip, .text4:hover .tooltip{
-    visibility: visible;
-    opacity: 1;
-}
-.question {
-    display: inline-block;
-    padding: 10px;
-    border-radius: 3px;
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 10) inset;
-
-}
-.question p {
-    margin-left: 3px;
-}
-.answer-input {
-    margin-top: 10px;
-    background-color: grey;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 10px;
-    outline: none;
-}
-.answer-input::placeholder {
-    color: white;
-}
-.submit-button {
-    background-color: rgb(5, 152, 98);
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding: 8px;
+.slider-outer {
+    width: 600px;
+    overflow-x: scroll;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
     border-radius: 5px;
-    border: none;
-    cursor: pointer;
 }
-#q1result {
-    position: relative;
-    visibility: hidden;
+
+.slider-inner {
+    /* width: 20%; */
+    background-color: var(--accent);
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+    padding: .35rem;
+    scroll-snap-align: start;
+    border: 2px solid var(--accent);
+}
+
+.slider-inner > h4 {
+    color: var(--secondary-button);
+}
+.slider-inner:hover {
+    border: 2px solid var(--accent-dark);
+}
+
+::-webkit-scrollbar {
+    background-color: var(--pri);
+    height: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+    border: .55em  solid var(--background);
+    border-radius: 100vh;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--accent-dark);
 
 }
