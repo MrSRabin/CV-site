@@ -36,6 +36,13 @@ img {
 
 /* skills.html */
 
+.experience > h2 {
+    margin-bottom: 5px;
+}
+.experience > h2 > em {
+    font-size: 16px;
+}
+
 .slider-outer {
     width: 680px;
     overflow-x: scroll;
@@ -72,8 +79,18 @@ img {
     background-color: var(--accent);
     margin-top: 0;
 }
+
 .slider-inner:hover {
     border: 2px solid var(--text);
+}
+
+.slider-inner > p > em > a {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+.slider-inner > p > em > a:hover {
+    text-decoration: underline;
+    color: var(--text);
 }
 
 ::-webkit-scrollbar {
