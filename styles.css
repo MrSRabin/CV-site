@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,300&display=swap');
 * {
     font-family: Roboto, sans-serif;
+    box-sizing: border-box;
     margin: 0;
 }
+:root {
+    --text: #0e1a20;
+    --background: #dfebf1;
+    --primary-button: #af6b4b;
+    --secondary-button: #cde1ea;
+    --accent: #af6b4b;
+}
+
 body {
-    background-color: rgb(9, 26, 50);
-    color: white;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 .intro {
@@ -71,7 +80,7 @@ body {
 }
 .skills {
     display: flex;
-    
+
     flex-wrap: wrap;
     /* grid-template-columns: 1fr 1fr; */
 }
@@ -199,7 +208,7 @@ body {
     background-color: white;
     color: black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 10) inset;
-    
+
 }
 .question p {
     margin-left: 3px;
