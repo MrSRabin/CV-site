@@ -7,13 +7,13 @@
 }
 
 :root {
-    --text: #0e1a20;
-    --background: #c6e6f6;
+    --text: #dff4ff;
+    --background: #243c4f;
     --primary-button: #af6b4b;
     --secondary-button: #72c7ee;
     --accent: #af6b4b;
     --accent-dark: #7e4b34;
-
+    --text-dark: #031134;
 }
 
 /* MISC */
@@ -37,7 +37,7 @@ img {
 /* skills.html */
 
 .slider-outer {
-    width: 600px;
+    width: 680px;
     overflow-x: scroll;
     display: grid;
     grid-auto-flow: column;
@@ -50,12 +50,15 @@ img {
 .slider-inner {
     /* width: 20%; */
     background-color: var(--accent);
+    color: var(--text-dark);
+    font-weight: 600;
     width: 300px;
     height: 100px;
     border-radius: 5px;
     padding: .35rem;
     scroll-snap-align: start;
     border: 2px solid var(--accent);
+    overflow: auto;
 }
 
 .slider-inner > h4 {
@@ -64,12 +67,13 @@ img {
     font-size: 19px;
 }
 .slider-inner:hover {
-    border: 2px solid var(--accent-dark);
+    border: 2px solid var(--text);
 }
 
 ::-webkit-scrollbar {
     background-color: var(--pri);
     height: 25px;
+    margin: .5em;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -77,7 +81,7 @@ img {
     border: .55em  solid var(--background);
     border-radius: 100vh;
 }
-::-webkit-scrollbar-thumb:hover {
-    background-color: var(--accent-dark);
 
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--text);
 }
